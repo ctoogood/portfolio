@@ -1,21 +1,14 @@
 main {
-    height:90vh;
     padding-top: 1rem;
     padding-bottom: 5rem;
     overflow: hidden;
 }
 
-.home__title {
+.page__title {
     font-family: 'Roboto';
     font-weight: 200;
-    margin:1rem;
-    color:#707070;
-
-    @media only screen and (min-width:900px) {
-        width:max-content;
-
-    }
-    
+    color:#707070;  
+    margin-top: 2rem;  
 
     h1 {
         font-weight: 200; 
@@ -55,6 +48,71 @@ main {
             color: #8C6C6C;
         }
     }
+}
+
+.page__description {
+    margin-top:3rem;
+    width:100%;
+
+    p {
+        margin:0.5rem;
+        font-weight:200;
+    }
+}
+
+.page__main {
+    height:auto;
+
+    @media only screen and (min-width:900px) {
+        display:flex;
+        max-width: 1200px;
+    }
+}
+
+.page__projects {
+    text-align: center;
+    color:#707070;
+    letter-spacing: 3px;
+
+    h2 {
+        font-weight: normal;
+        margin:0;
+    }
+
+    p {
+        font-weight: 200;
+    }
+
+    @media only screen and (min-width:900px) {
+        margin-top: 6rem;
+
+    }
+}
+
+.page__info {
+    text-align: center;
+
+    @media only screen and (min-width:900px) {
+        text-align: left;
+        position: relative;
+        width:100%;
+        margin:1rem;
+
+    }
+}
+
+.page__fixed {
+    @media only screen and (min-width:900px) {
+        position: fixed;
+        top:4rem;
+        width:50%;
+        max-width: 600px;
+    }
+}
+
+.home__main {
+    height:70vh;
+    margin-top:3rem;
 }
 
 .home__spacer {

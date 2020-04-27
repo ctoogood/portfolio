@@ -1,0 +1,58 @@
+.projectDetail__main {
+    text-align: center;
+    margin:1rem;
+
+
+    @media only screen and (min-width:900px) {
+        display:flex;
+        max-width: 1200px;
+        text-align: left;
+    }
+}
+
+.projectDetail__header {
+    letter-spacing: 3px;
+    margin-top: 2rem;  
+
+    h1 {
+        color: #878C98;
+    }
+
+    h2 {
+        font-weight: 200;
+    }
+
+    h3 {
+        font-weight: 300;
+    }
+
+    @media only screen and (min-width:900px) {
+        width:70%;
+    }
+
+}
+
+.projectDetail__fixed {
+    @media only screen and (min-width:900px) {
+        position: fixed;
+        top:4rem;
+        width:50%;
+        max-width: 600px;
+    }
+}
+
+.projectDetail__content {
+    min-height:90vh;
+    p {
+        letter-spacing: 2px;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    @media only screen and (min-width:900px) {
+        width:50%;
+        margin-top: 5rem;
+    }
+
+}

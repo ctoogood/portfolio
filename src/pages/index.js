@@ -23,8 +23,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <main>
-        <section className="home__title">
+      <section className="home__main">
+        <section className="page__title">
           <h1>CALUM TOOGOOD</h1>
           <hr />
           <h2>
@@ -39,7 +39,7 @@ const IndexPage = () => {
           />
         </section>
         <div className="home__spacer">&nbsp;</div>
-      </main>
+      </section>
     </Layout>
   )
 }

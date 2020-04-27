@@ -22,7 +22,7 @@ const Header = () => {
           </Link>
           <Link
             onClick={toggleMenu}
-            to="/web-development"
+            to="/webdevelopment"
             className="menu__listItem"
           >
             Web Development
