@@ -1,0 +1,75 @@
+main {
+    height:90vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.home__title {
+    font-family: 'Roboto';
+    font-weight: 200;
+    margin:1rem;
+    color:#707070;
+
+    @media only screen and (min-width:900px) {
+        width:max-content;
+
+    }
+    
+
+    h1 {
+        font-weight: 200; 
+        margin:0.5rem;
+        letter-spacing:5px;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin:0.5rem;
+        font-size: 2rem;
+        letter-spacing:5px;
+        
+       
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: normal;
+        margin:0.5rem;
+        letter-spacing:5px;
+    }
+
+    hr {
+        margin:0;
+        margin-left: 0.4rem;
+        width:100%;
+    }
+
+    span {
+        font-weight: bold;
+        &:nth-child(1) {
+            color: #878C98;
+        }
+        &:nth-child(2) {
+            color: #8C6C6C;
+        }
+    }
+}
+
+.home__spacer {
+    height:2rem;
+}
+
+.home__imagecontainer {
+    height:100%;
+}
+
+.home__hero__image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: bottom;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
