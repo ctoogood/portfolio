@@ -2,15 +2,16 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Project from "../components/project"
+import PhotoProject from "../components/photoProject"
+import "./pages.scss"
 
-const WebDevelopment = props => {
+const Photography = props => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
         sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         filter: {
-          sourceInstanceName: { eq: "webdev" }
+          sourceInstanceName: { eq: "photography" }
           extension: { eq: "md" }
         }
       ) {
@@ -38,10 +39,10 @@ const WebDevelopment = props => {
   `)
   return (
     <Layout path={props.location}>
-      <SEO title="Web Development" />
+      <SEO title="Photography" />
       <section className="page__main">
         <nav className="page__section">
-          <Link to="/webdevelopment">WEB DEVELOPMENT</Link>
+          <Link to="/photography">PHOTOGRAPHY</Link>
         </nav>
         <section className="page__info">
           <section className="page__fixed">
@@ -49,34 +50,22 @@ const WebDevelopment = props => {
               <h1>CALUM TOOGOOD</h1>
               <hr />
               <h2>
-                <span>JAVASCRIPT WEB DEVELOPER</span>
+                <span style={{ color: "#8C6C6C" }}>PHOTOGRAPHER</span>
               </h2>
               <h3>BASED IN SHETLAND</h3>
             </section>
             <section className="page__description">
               <p>
-                I'm a keen beginner JavaScript developer with experience in
-                frontend technologies, such as React, and some familiarity using
-                Node JS & MongoDb on the backend.
-              </p>
-              <p>
-                All of my web development skills have been self-taught using
-                online-based resources. I very much enjoy learning new skills
-                and challenging myself to solve problems through the available
-                technologies.
-              </p>
-              <p>
-                I began learning web development a couple of years ago to create
-                websites for myself and soon realised I enjoyed the process of
-                creating a design and then trying to implement it as a
-                functional website.
+                I have a passion for photographing a wide range of subjects
+                including travel & the outdoors but I'm most interested in
+                photographing industry and people in their working environment.
               </p>
             </section>
           </section>
         </section>
         <section className="page__projects">
           {data.allFile.edges.map(project => (
-            <Project project={project} key={project.node.id} />
+            <PhotoProject project={project} key={project.node.id} />
           ))}
         </section>
       </section>
@@ -84,4 +73,4 @@ const WebDevelopment = props => {
   )
 }
 
-export default WebDevelopment
+export default Photography

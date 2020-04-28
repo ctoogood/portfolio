@@ -14,6 +14,8 @@
     padding:.5rem;
     cursor:pointer;
     z-index: 6;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0 0 5px 0;
 }
 
 .line {
@@ -108,4 +110,35 @@
     .menu__list {
         opacity: 1;
     }
+}
+
+.photoProject__main {
+    padding:1rem;
+    max-width: 500px;
+    margin:auto;
+    transition:all 0.3s linear;
+    margin-bottom: 3rem;
+
+    .photoProject__title {
+        margin:1rem;
+        font-weight: 600;
+        color:#878C98;
+    }
+
+    .photoProject__image {
+        margin:auto;
+        border-radius: 3px;
+        max-width: 400px;
+
+        @media only screen and (min-width:900px) {
+            width:450px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+
+    }
+
+    
 }

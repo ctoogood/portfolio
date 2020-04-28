@@ -4,11 +4,11 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = props => {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <Header path={props.path} />
+      <main>{props.children}</main>
       <footer
         style={{
           fontFamily: "Roboto",

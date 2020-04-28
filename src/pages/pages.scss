@@ -62,6 +62,9 @@ main {
 
 .page__main {
     height:auto;
+    position: relative;
+    max-width: 500px;
+    margin:auto;
 
     @media only screen and (min-width:900px) {
         display:flex;
@@ -89,6 +92,13 @@ main {
     }
 }
 
+.page__project {
+    
+    &:nth-child(2) {
+        margin-bottom:3rem;
+    }
+}
+
 .page__info {
     text-align: center;
 
@@ -107,6 +117,20 @@ main {
         top:4rem;
         width:50%;
         max-width: 600px;
+    }
+}
+
+.page__section {
+    position: relative;
+    right:0;
+    top:0;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    color:#878C98;
+
+    @media only screen and (min-width:900px) {
+        position: absolute;
     }
 }
 

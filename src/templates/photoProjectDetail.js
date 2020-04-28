@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Overdrive from "react-overdrive"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./projectDetail.scss"
 
-const ProjectDetail = ({ data: { project }, errors }) => {
+const Post = ({ data: { project }, errors }) => {
   const image = project.frontmatter.featuredImage.childImageSharp.fluid
 
   return (
@@ -14,16 +13,11 @@ const ProjectDetail = ({ data: { project }, errors }) => {
       <SEO title={project.frontmatter.title} />
       <div className="projectDetail__main">
         <nav className="page__section">
-          <Link to="/webdevelopment">WEB DEVELOPMENT</Link>
+          <Link to="/webdevelopment">PHOTOGRAPHY</Link>
         </nav>
         <section className="projectDetail__header">
           <section className="projectDetail__fixed">
-            <Overdrive id="featured-image">
-              <Img fluid={image} className="projectDetail__image" />
-            </Overdrive>
-            <h2 className="projectDetail__metadata">
-              {project.frontmatter.category}
-            </h2>
+            <Img fluid={image} className="projectDetail__image" />
             <hr />
             <h1>{project.frontmatter.title}</h1>
             <h3 className="projectDetail__metadata">
@@ -40,10 +34,10 @@ const ProjectDetail = ({ data: { project }, errors }) => {
   )
 }
 
-export default ProjectDetail
+export default Post
 
 export const query = graphql`
-  query ProjectQuery($slug: String!) {
+  query PhotoProjectQuery($slug: String!) {
     project: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {

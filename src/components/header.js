@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import "./components.scss"
 
-const Header = () => {
-  const [menu, setMenu] = React.useState(false)
+const Header = props => {
+  const [menu, setMenu] = useState(false)
 
   const menuActive = menu ? "is-active" : ""
   const menuClicked = menu ? "clicked-menu" : ""
@@ -16,38 +16,27 @@ const Header = () => {
   return (
     <>
       <section className={`menu__main ${menuActive}`}>
+        {console.log(menu)}
         <ul className="menu__list">
-          <Link onClick={toggleMenu} to="/" className="menu__listItem">
+          <Link to="/" className="menu__listItem">
             Home
           </Link>
-          <Link
-            onClick={toggleMenu}
-            to="/webdevelopment"
-            className="menu__listItem"
-          >
+          <Link to="/webdevelopment" className="menu__listItem">
             Web Development
           </Link>
-          <Link
-            onClick={toggleMenu}
-            to="/photography"
-            className="menu__listItem"
-          >
+          <Link to="/photography" className="menu__listItem">
             Photography
           </Link>
-          <Link
-            onClick={toggleMenu}
-            to="/latest-images"
-            className="menu__listItem"
-          >
+          <Link to="/latest-images" className="menu__listItem">
             Latest Images
           </Link>
-          <Link onClick={toggleMenu} to="/blog" className="menu__listItem">
+          <Link to="/blog" className="menu__listItem">
             Blog
           </Link>
-          <Link onClick={toggleMenu} to="/about" className="menu__listItem">
+          <Link to="/about" className="menu__listItem">
             About
           </Link>
-          <Link onClick={toggleMenu} to="/contact" className="menu__listItem">
+          <Link to="/contact" className="menu__listItem">
             Contact
           </Link>
         </ul>

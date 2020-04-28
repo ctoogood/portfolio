@@ -20,13 +20,13 @@ module.exports = {
         path: `${__dirname}/src/content/webdev`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `photography`,
-    //     path: `${__dirname}/src/content/photography`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `photography`,
+        path: `${__dirname}/src/content/photography`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {

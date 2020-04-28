@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./pages.scss"
 
-const IndexPage = () => {
+const IndexPage = props => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
@@ -21,7 +21,7 @@ const IndexPage = () => {
     }
   `)
   return (
-    <Layout>
+    <Layout path={props.location}>
       <SEO title="Home" />
       <section className="home__main">
         <section className="page__title">
