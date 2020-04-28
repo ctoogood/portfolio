@@ -7,19 +7,17 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <div>
-        <Header />
-        <main>{children}</main>
-        <footer
-          style={{
-            fontFamily: "Roboto",
-            color: "#707070",
-            marginLeft: "0.5rem",
-          }}
-        >
-          © {new Date().getFullYear()}
-        </footer>
-      </div>
+      <Header />
+      <main>{children}</main>
+      <footer
+        style={{
+          fontFamily: "Roboto",
+          color: "#707070",
+          marginLeft: "0.5rem",
+        }}
+      >
+        © {new Date().getFullYear()}
+      </footer>
     </>
   )
 }
