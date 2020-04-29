@@ -27,13 +27,13 @@ module.exports = {
         path: `${__dirname}/src/content/photography`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `latestimages`,
-    //     path: `${__dirname}/src/content/images`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `latestimages`,
+        path: `${__dirname}/src/content/images`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {

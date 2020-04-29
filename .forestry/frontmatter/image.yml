@@ -1,0 +1,20 @@
+---
+label: Image
+hide_body: true
+fields:
+  - name: date
+    type: datetime
+    label: Date
+    description: ""
+    config:
+      required: true
+      date_format:
+      time_format:
+      display_utc: false
+    default: now
+  - name: title
+    type: text
+    label: Title
+    description: ""
+    config:
+      required: true
