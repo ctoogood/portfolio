@@ -10,7 +10,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - image
+  - latest-images
 upload_dir: ''
 public_path: ''
 front_matter_path: ''
