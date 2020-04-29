@@ -17,4 +17,5 @@ fields:
   name: keywords
   label: keywords
 pages:
+- src/content/images/181119.md
 - src/content/images/290420.md
