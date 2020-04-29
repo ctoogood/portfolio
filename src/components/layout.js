@@ -7,8 +7,10 @@ import "./layout.css"
 const Layout = props => {
   return (
     <>
-      <Header path={props.path} />
-      <main>{props.children}</main>
+      <main style={{ maxWidth: "1400px", margin: "auto" }}>
+        <Header path={props.path} />
+        {props.children}
+      </main>
       <footer
         style={{
           fontFamily: "Roboto",

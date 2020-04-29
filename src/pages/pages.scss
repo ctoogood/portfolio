@@ -8,7 +8,13 @@ main {
     font-family: 'Roboto';
     font-weight: 200;
     color:#707070;  
-    margin-top: 2rem;  
+    margin-top: 2rem;
+    padding:1rem;
+
+    @media only screen and (min-width:1400px) {
+        padding:0;
+    }
+
 
     h1 {
         font-weight: 200; 
@@ -135,8 +141,11 @@ main {
 }
 
 .home__main {
-    height:70vh;
-    margin-top:3rem;
+    margin-top:1rem;
+    height: 90vh;
+    overflow: hidden;
+    margin-bottom:7rem;
+
 }
 
 .home__spacer {
@@ -148,10 +157,8 @@ main {
 }
 
 .home__hero__image {
-    object-fit: cover;
     height: 100%;
     width: 100%;
-    object-position: bottom;
     margin-top:3rem;
     margin-bottom:3rem;
 }

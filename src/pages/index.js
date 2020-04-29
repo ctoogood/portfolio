@@ -3,15 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import LatestImages from "../components/latestImages"
 import SEO from "../components/seo"
 import "./pages.scss"
 
 const IndexPage = props => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(
-        relativePath: { eq: "dore-holm-large-waves.jpg" }
-      ) {
+      placeholderImage: file(relativePath: { eq: "waves-crashing-burra.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
@@ -40,6 +39,7 @@ const IndexPage = props => {
         </section>
         <div className="home__spacer">&nbsp;</div>
       </section>
+      <LatestImages />
     </Layout>
   )
 }
