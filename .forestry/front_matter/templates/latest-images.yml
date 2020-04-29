@@ -1,0 +1,16 @@
+---
+label: Latest Images
+hide_body: true
+fields:
+- type: text
+  name: caption
+  label: caption
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: list
+  name: keywords
+  label: keywords
