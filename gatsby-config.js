@@ -48,6 +48,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-images-grid",
+            options: {
+              className: "image__grid",
+              gridGap: "1rem",
+              margin: "20px auto",
+            },
+          },
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {
+              figureClassName: "md__figure",
+              captionClassName: "md__figcaption",
+              imageClassName: "md__image",
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,

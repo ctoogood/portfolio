@@ -1,32 +1,26 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./projectDetail.scss"
 
 const Post = ({ data: { project }, errors }) => {
-  const image = project.frontmatter.featuredImage.childImageSharp.fluid
-
   return (
     <Layout>
       <SEO title={project.frontmatter.title} />
-      <div className="projectDetail__main">
+      <div className="photoProjectDetail__main">
         <nav className="page__section">
-          <Link to="/webdevelopment">PHOTOGRAPHY</Link>
+          <Link to="/photography">PHOTOGRAPHY</Link>
         </nav>
         <section className="projectDetail__header">
-          <section className="projectDetail__fixed">
-            <Img fluid={image} className="projectDetail__image" />
-            <hr />
-            <h1>{project.frontmatter.title}</h1>
-            <h3 className="projectDetail__metadata">
-              {project.frontmatter.description}
-            </h3>
-          </section>
+          <h1>{project.frontmatter.title}</h1>
+          <h3 className="projectDetail__metadata">
+            {project.frontmatter.description}
+          </h3>
+          <hr />
         </section>
         <section
-          className="projectDetail__content"
+          className="photoProjectDetail__content"
           dangerouslySetInnerHTML={{ __html: project.html }}
         />
       </div>

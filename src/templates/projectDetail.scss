@@ -58,3 +58,53 @@
     }
 
 }
+
+.photoProjectDetail__main {
+    text-align: center;
+    padding:1rem;
+    position: relative;
+
+    @media only screen and (min-width:900px) {
+        text-align: left;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+}
+
+.photoProjectDetail__content {
+    img {
+        margin:0;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .md__figure {
+        margin:0;
+    }
+
+    .md__figcaption {
+        display: none;
+    }
+
+    .md__image {
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .image-grid {
+        margin:0;
+
+        @media only screen and (min-width:900px) {
+        }
+    }
+
+    .image__grid-grid {
+        display:block;
+
+
+        @media only screen and (min-width:900px) {
+            display: grid;
+        }
+    }
+}
