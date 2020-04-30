@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
   templates:
-  - blog-post
+  - post
 - type: directory
   path: src/content/images
   label: Images
