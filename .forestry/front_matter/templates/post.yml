@@ -1,4 +1,56 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+  default: now
+- name: slug
+  type: text
+  config:
+    required: true
+  label: Slug
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Excerpt
+- name: featured_image
+  type: file
+  config:
+    maxSize: 64
+  label: Featured Image
+- name: category
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Web Development
+    - Photography
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
