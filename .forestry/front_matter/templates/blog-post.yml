@@ -40,7 +40,9 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - Web Development
+    - Photography
     source:
       type: simple
       section: 
