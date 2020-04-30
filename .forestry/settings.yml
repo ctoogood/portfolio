@@ -9,6 +9,8 @@ sections:
   label: Blog Posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 - type: directory
   path: src/content/images
   label: Images
