@@ -54,3 +54,5 @@ fields:
   type: tag_list
   default: []
   label: Keywords
+pages:
+- src/content/posts/creating-an-e-commerce-site-with-snipcart-gatsbyjs.md
