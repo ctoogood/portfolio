@@ -1,6 +1,6 @@
 .projectDetail__main {
     text-align: center;
-    margin:1rem;
+    padding:1rem;
     position: relative;
 
 
@@ -106,5 +106,29 @@
         @media only screen and (min-width:900px) {
             display: grid;
         }
+    }
+}
+
+.blogPostDetail__fixed {
+    @media only screen and (min-width:900px) {
+        position: fixed;
+        top:4rem;
+        width:40%;
+        max-width: 500px;
+    }
+}
+
+.blogPostDetail__content {
+    min-height:90vh;
+    p {
+        letter-spacing: 2px;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    @media only screen and (min-width:900px) {
+        width:60%;
+        margin-top: 5rem;
     }
 }
