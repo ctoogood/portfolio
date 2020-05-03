@@ -20,23 +20,34 @@ main {
         font-weight: 200; 
         margin:0.5rem;
         letter-spacing:5px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+
+        @media only screen and (min-width:400px) {
+            font-size: 1.8rem;
+        }
+
     }
 
     h2 {
         font-weight: normal;
         margin:0.5rem;
-        font-size: 2rem;
+        font-size: 1.2rem;
         letter-spacing:5px;
-        
-       
+
+        @media only screen and (min-width:400px) {
+            font-size: 2rem;
+        }
     }
 
     h3 {
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: normal;
         margin:0.5rem;
         letter-spacing:5px;
+
+        @media only screen and (min-width:400px) {
+            font-size: 1.4rem;
+        }
     }
 
     hr {
@@ -183,8 +194,11 @@ main {
 }
 
 .home__hero__image {
-    height: 100%;
     width: 100%;
     margin-top:3rem;
     margin-bottom:3rem;
+
+    @media only screen and (min-width:1200px) {
+        height: 100%;
+    }
 }

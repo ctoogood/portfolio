@@ -14,6 +14,7 @@ const LatestImages = () => {
       ) {
         edges {
           node {
+            id
             childMarkdownRemark {
               frontmatter {
                 caption
@@ -33,6 +34,7 @@ const LatestImages = () => {
           <img
             src={project.node.childMarkdownRemark.frontmatter.image}
             alt={project.node.childMarkdownRemark.frontmatter.caption}
+            key={project.node.id}
           />
         ))}
       </section>

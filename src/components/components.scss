@@ -41,6 +41,27 @@
     
 }
 
+////////////////////////////////////// MENU //////////////////////////////////////
+
+.footer__main {
+    text-align: center;
+    background-color: #878C98;
+    color:white;
+    margin:0;
+    padding: 1rem;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    font-weight: 300;
+
+    p {
+
+        &:nth-child(2) {
+            margin:0;
+        }
+    }
+}
+
 
 ////////////////////////////////////// MENU //////////////////////////////////////
 

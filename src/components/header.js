@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import Footer from "./footer"
 import "./components.scss"
 
 const Header = props => {
@@ -33,13 +34,8 @@ const Header = props => {
           <Link to="/blog" className="menu__listItem">
             Blog
           </Link>
-          <Link to="/about" className="menu__listItem">
-            About
-          </Link>
-          <Link to="/contact" className="menu__listItem">
-            Contact
-          </Link>
         </ul>
+        <Footer />
       </section>
       <header className="header__main">
         <button
