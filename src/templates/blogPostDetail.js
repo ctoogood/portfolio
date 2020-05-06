@@ -7,8 +7,12 @@ import "./projectDetail.scss"
 const BlogPostDetail = ({ data: { post }, errors }) => {
   return (
     <Layout>
-      {console.log(post)}
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.excerpt}
+        keywords={post.frontmatter.keywords}
+        image={post.frontmatter.featured_image}
+      />
       <div className="projectDetail__main">
         <nav className="page__section">
           <Link to="/blog">BLOG</Link>
@@ -49,6 +53,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         excerpt
+        keywords
         featured_image
       }
     }

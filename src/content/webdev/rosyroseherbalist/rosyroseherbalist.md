@@ -6,6 +6,8 @@
  description: 'Ecommerce website & CMS for a small herbalist business'
  keywords: ["Gatsby", "GatsbyJS", "React", "JavaScript", "Stripe", "Snipcart", "Sanity.io", "CMS", "Small Business Website"]
  date: '2020-04-25'
+ url: 'https://www.rosyherbalist.co.uk'
+ github: ''
 ---
 
 Eccommerce website built for Rosy Rose Herbalist. Features a shop and a blog. Content management system setup using Sanity.io

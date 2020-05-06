@@ -2,6 +2,23 @@ module.exports = {
   siteMetadata: {
     title: `Calum Toogood`,
     description: `Web Developer & Photographer Based in Shetland`,
+    siteUrl: `https://www.calumtoogood.com`,
+    image: `${__dirname}/src/images/dore-holm-large-waves.jpg`,
+    keywords: [
+      `Web Developer`,
+      `Website`,
+      `Web Design`,
+      `JavaScript Developer`,
+      `JavaScript`,
+      `React`,
+      `GatsbyJS`,
+      `Shetland`,
+      `Shetland Isles`,
+      `Lerwick`,
+      `Photographer`,
+      `Landscape Photography`,
+      `Photography`,
+    ],
     author: `Calum Toogood`,
   },
   plugins: [

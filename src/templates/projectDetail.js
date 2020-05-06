@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Overdrive from "react-overdrive"
+import Github from "../images/githubgrey.svg"
+import LinkIcon from "../images/link.svg"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./projectDetail.scss"
@@ -11,7 +13,12 @@ const ProjectDetail = ({ data: { project }, errors }) => {
 
   return (
     <Layout>
-      <SEO title={project.frontmatter.title} />
+      <SEO
+        title={project.frontmatter.title}
+        description={project.frontmatter.description}
+        keywords={project.frontmatter.keywords}
+        image={project.frontmatter.featuredImage.publicURL}
+      />
       <div className="projectDetail__main">
         <nav className="page__section">
           <Link to="/webdevelopment">WEB DEVELOPMENT</Link>
@@ -29,6 +36,24 @@ const ProjectDetail = ({ data: { project }, errors }) => {
             <h3 className="projectDetail__metadata">
               {project.frontmatter.description}
             </h3>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.frontmatter.github}
+            >
+              <img
+                style={{ width: "20px", marginRight: "1rem" }}
+                src={Github}
+                alt="github"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.frontmatter.url}
+            >
+              <img style={{ width: "20px" }} src={LinkIcon} alt="url" />
+            </a>
           </section>
         </section>
         <section
@@ -51,7 +76,11 @@ export const query = graphql`
         slug
         title
         description
+        keywords
+        url
+        github
         featuredImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid

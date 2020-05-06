@@ -6,6 +6,8 @@
  description: 'A photo upload and storage website built using React JS & AWS Amplify'
  keywords: ["AWS", "Material-UI", "Amplify", "AWS Amplify", "AWS Cognito", "Serverless", "Dynamo DB", "React", "ReactJS", "Lambda"]
  date: '2020-04-01'
+ url: 'https://master.d2u97rkd7xed86.amplifyapp.com/'
+ github: 'https://github.com/ctoogood/photojournal'
 ---
 
 Photojournalit is a photo storing website built using React and AWS Amplify.

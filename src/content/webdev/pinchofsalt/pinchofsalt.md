@@ -6,6 +6,8 @@
  description: 'Recipe search engine built using the MERN stack(MongoDB, Express, React & Node'
  keywords: ["MERN", "React", "React JS", "Recipe Search Engine", "Recipe API", "Node", "MongoDB", "Express"]
  date: '2020-03-01'
+ url: 'https://priceless-thompson-b50611.netlify.app/'
+ github: 'https://github.com/ctoogood/recipesearch'
 ---
 
 Recipe search engine, built to practice using React and then developed into a fullstack MERN app. The backend allows recipes to be saved to a list.

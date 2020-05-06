@@ -7,7 +7,12 @@ import "./projectDetail.scss"
 const Post = ({ data: { project }, errors }) => {
   return (
     <Layout>
-      <SEO title={project.frontmatter.title} />
+      <SEO
+        title={project.frontmatter.title}
+        description={project.frontmatter.description}
+        keywords={project.frontmatter.keywords}
+        image={project.frontmatter.featuredImage.publicURL}
+      />
       <div className="photoProjectDetail__main">
         <nav className="page__section">
           <Link to="/photography">PHOTOGRAPHY</Link>
@@ -39,7 +44,9 @@ export const query = graphql`
         slug
         title
         description
+        keywords
         featuredImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
