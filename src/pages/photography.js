@@ -56,9 +56,22 @@ const Photography = props => {
             </section>
             <section className="page__description">
               <p>
-                I have a passion for photographing a wide range of subjects
-                including travel & the outdoors but I'm most interested in
-                photographing industry and people in their working environment.
+                One of my main passions is photography - I love photographing
+                travel, the outdoors & people.
+              </p>
+              <p>
+                I've been a keen photographer since childhood and completed a
+                BA(hons) Photojournalism in 2012 from Swansea Met University. I
+                was a keen traveller whilst at university, spending a lot of
+                time in Eastern Europe creating photography projects for my
+                studies.
+              </p>
+              <p>
+                After completing my degree I spent some time working as a
+                photojournalist in the Middle East and doing further travelling.
+                Since then I've spent time working commercially as a
+                photographer in the Shetland Islands, but I now just enjoy
+                photographing landscapes in Shetland and occasional travel.
               </p>
             </section>
           </section>

@@ -10,6 +10,9 @@
  github: 'https://github.com/ctoogood/wni'
 ---
 
+This website was created as a means of providing inspiration for places to walk and kayak in Shetland. 
+A user can select either walk or kayak and is then provided with a list of places where they can do that activity.
+
 Wild Northern Isles is built using
 
 - Gatsby JS

@@ -10,7 +10,9 @@
  github: ''
 ---
 
-Eccommerce website built for Rosy Rose Herbalist. Features a shop and a blog. Content management system setup using Sanity.io
+This e-commerce website was created for a small herbalist business. 
+It features Sanity used as a CMS to manage content and blog posts and uses Snipcart to provide shopping cart functionality to the site. 
+The site is built using the static site generator GatsbyJS which delivers the site quickly and allows for optimal SEO capabilities to help the business get found by search engines.
 
 Built using:
 

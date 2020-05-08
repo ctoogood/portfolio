@@ -55,9 +55,15 @@ const WebDevelopment = props => {
             </section>
             <section className="page__description">
               <p>
-                I'm a keen beginner JavaScript developer with experience in
-                frontend technologies, such as React, and some familiarity using
-                Node JS & MongoDb on the backend.
+                I'm a self taught JavaScript developer with experience in
+                frontend technologies, such as ReactJS, and some familiarity
+                using NodeJS & MongoDB on the Backend.
+              </p>
+              <p>
+                Most of my projects I create using the Jamstack - I enjoy using
+                static site generators(GatsbyJS) along with any tools necessary
+                for the project. I've also created sites based on AWS, using a
+                variety of their services to create tailored serverless apps.
               </p>
               <p>
                 All of my web development skills have been self-taught using
@@ -66,10 +72,9 @@ const WebDevelopment = props => {
                 technologies.
               </p>
               <p>
-                I began learning web development a couple of years ago to create
-                websites for myself and soon realised I enjoyed the process of
-                creating a design and then trying to implement it as a
-                functional website.
+                Please check out this selection of projects I've designed and
+                developed. There are links to visit the sites and most of the
+                source code is available on GitHub.
               </p>
             </section>
           </section>
