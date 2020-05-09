@@ -1,0 +1,31 @@
+---
+label: Web Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: category
+  label: category
+- type: text
+  name: slug
+  label: slug
+- type: file
+  name: featuredImage
+  label: featuredImage
+- type: text
+  name: description
+  label: description
+- type: list
+  name: keywords
+  label: keywords
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: url
+  label: url
+- type: text
+  name: github
+  label: github
