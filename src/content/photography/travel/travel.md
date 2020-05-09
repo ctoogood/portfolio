@@ -11,11 +11,11 @@ keywords:
 ```grid|2
 ![Old Cairo](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036918/portfolio/photography/Travel/travel-photography-1.jpg)
 
-![Shop, Old Cairo](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036919/portfolio/photography/Travel/travel-photography-3.jpg)!
+![Shop, Old Cairo](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036919/portfolio/photography/Travel/travel-photography-3.jpg)
 ```
 
 ```grid|3
-[Machinist, Cairo](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036919/portfolio/photography/Travel/travel-photography-2.jpg)
+![Machinist, Cairo](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036919/portfolio/photography/Travel/travel-photography-2.jpg)
 
 ![Camel Market, Egypt](https://res.cloudinary.com/dhat0b0ey/image/upload/v1589036920/portfolio/photography/Travel/travel-photography-4.jpg)
 
