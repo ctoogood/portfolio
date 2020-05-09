@@ -9,11 +9,15 @@ sections:
   label: Web Projects
   create: all
   match: "**/*"
+  templates:
+  - web-project
 - type: directory
   path: src/content/photography
   label: Photography Projects
   create: all
   match: "**/*"
+  templates:
+  - photography-project
 - type: directory
   path: src/content/posts
   label: Blog Posts
