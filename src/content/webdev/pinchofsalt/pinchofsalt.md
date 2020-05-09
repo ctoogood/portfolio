@@ -12,6 +12,12 @@
 
 Built to help learn working with the MERN stack(MongoDB, Express, React & Node), this site utilises the Spoonacular API to search a database of recipes and provide results that display images, ingredients and the steps for using the recipe. No authentication has been added to the site but the user can save recipes to a list which is stored in Mongo DB Atlas.
 
+![Search Results](./pinchofsalt_search.png)
+
+![Recipe Detail](./pinchofsalt_recipe.png)
+
+![Selected List of Recipes](./pinchofsalt_list.png)
+
 Built using:
 
 - React.JS

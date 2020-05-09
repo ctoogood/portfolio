@@ -13,6 +13,15 @@
 This website was created as a means of providing inspiration for places to walk and kayak in Shetland. 
 A user can select either walk or kayak and is then provided with a list of places where they can do that activity.
 
+![List of walks](./wni_walks.png)
+
+![Walk Details](./wni_walk.png)
+
+![Bing Maps integration](./wni_map.png)
+
+![Blog Page](./wni_blog.png)
+
+
 Wild Northern Isles is built using
 
 - Gatsby JS
