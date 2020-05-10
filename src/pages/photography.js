@@ -9,7 +9,7 @@ const Photography = props => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
-        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
+        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
         filter: {
           sourceInstanceName: { eq: "photography" }
           extension: { eq: "md" }
@@ -22,6 +22,7 @@ const Photography = props => {
               frontmatter {
                 title
                 description
+                order
                 slug
                 featuredImage {
                   childImageSharp {
