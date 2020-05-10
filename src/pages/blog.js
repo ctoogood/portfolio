@@ -43,7 +43,7 @@ const Blog = props => {
       <SEO title="Blog" />
       <section className="page__main">
         <nav className="page__section">
-          <Link to="/BLOG">BLOG</Link>
+          <Link to="/blog">BLOG</Link>
         </nav>
         <section className="page__info">
           <section className="page__fixed">

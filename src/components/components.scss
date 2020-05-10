@@ -271,3 +271,24 @@
 
     }
 }
+
+.latestImages__nav {
+    max-width: 1000px;
+    height:7rem;
+    margin:auto;
+    width:100%;
+    margin-top:5rem;
+    position: relative;
+}
+
+.latestImages__next {
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.latestImages__prev {
+    position: absolute;
+    top:0;
+    left:0; 
+}

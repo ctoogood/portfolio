@@ -1,8 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import "./components.scss"
-import LatestImage from "./latestImage"
+import "../components/components.scss"
+import LatestImage from "../components/latestImage"
 
 const LatestImages = () => {
   const data = useStaticQuery(graphql`
@@ -44,8 +44,8 @@ const LatestImages = () => {
       <SimpleReactLightbox>
         <SRLWrapper options={options}>
           <section className="latestImages__grid">
-            {data.allFile.edges.map(project => (
-              <LatestImage project={project} key={project.node.id} />
+            {data.allFile.edges.map(image => (
+              <LatestImage image={image} key={image.node.id} />
             ))}
           </section>
         </SRLWrapper>

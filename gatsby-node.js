@@ -52,6 +52,25 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      images: allFile(
+        filter: {
+          sourceInstanceName: { eq: "latestimages" }
+          extension: { eq: "md" }
+        }
+      ) {
+        edges {
+          node {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                caption
+                image
+                date(formatString: "MMMM DD, YYYY")
+              }
+            }
+          }
+        }
+      }
     }
   `)
   if (result.errors) {
@@ -61,6 +80,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const webProjects = result.data.webProjects.edges || []
   const photoProjects = result.data.photoProjects.edges || []
   const blogPosts = result.data.blogPosts.edges || []
+  const latestImages = result.data.images.edges || []
+
+  const postsPerPage = 5
+  const numPages = Math.ceil(latestImages.length / postsPerPage)
 
   webProjects.forEach((edge, index) => {
     const path = `/webdevelopment/${edge.node.childMarkdownRemark.frontmatter.slug}`
@@ -86,6 +109,19 @@ exports.createPages = async ({ graphql, actions }) => {
       path,
       component: require.resolve("./src/templates/blogPostDetail.js"),
       context: { slug: edge.node.childMarkdownRemark.frontmatter.slug },
+    })
+  })
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/latest-images` : `/latest-images/${i + 1}`,
+      component: require.resolve("./src/templates/latestImages.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
     })
   })
 }

@@ -17,21 +17,32 @@ const Header = props => {
   return (
     <>
       <section className={`menu__main ${menuActive}`}>
-        {console.log(menu)}
         <ul className="menu__list">
-          <Link to="/" className="menu__listItem">
+          <Link to="/" className="menu__listItem" onClick={toggleMenu}>
             Home
           </Link>
-          <Link to="/webdevelopment" className="menu__listItem">
+          <Link
+            to="/webdevelopment"
+            className="menu__listItem"
+            onClick={toggleMenu}
+          >
             Web Development
           </Link>
-          <Link to="/photography" className="menu__listItem">
+          <Link
+            to="/photography"
+            className="menu__listItem"
+            onClick={toggleMenu}
+          >
             Photography
           </Link>
-          <Link to="/latest-images" className="menu__listItem">
+          <Link
+            to="/latest-images"
+            className="menu__listItem"
+            onClick={toggleMenu}
+          >
             Latest Images
           </Link>
-          <Link to="/blog" className="menu__listItem">
+          <Link to="/blog" className="menu__listItem" onClick={toggleMenu}>
             Blog
           </Link>
         </ul>

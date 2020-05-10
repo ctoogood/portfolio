@@ -1,13 +1,13 @@
 import React from "react"
 import "./components.scss"
 
-const LatestImage = ({ project }) => {
+const LatestImage = ({ image }) => {
   return (
     <div className="latestImage__main">
       <img
-        src={project.node.childMarkdownRemark.frontmatter.image}
-        alt={`${project.node.childMarkdownRemark.frontmatter.caption} - ${project.node.childMarkdownRemark.frontmatter.date} `}
-        key={project.node.id}
+        src={image.node.childMarkdownRemark.frontmatter.image}
+        alt={`${image.node.childMarkdownRemark.frontmatter.caption} - ${image.node.childMarkdownRemark.frontmatter.date} `}
+        key={image.node.id}
       />
     </div>
   )
