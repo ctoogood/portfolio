@@ -56,4 +56,3 @@ fields:
   label: Keywords
 pages:
 - src/content/posts/building-a-serverless-photo-upload-website-with-react-aws.md
-- src/content/posts/creating-an-e-commerce-site-with-snipcart-gatsbyjs.md
