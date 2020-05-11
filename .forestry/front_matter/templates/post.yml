@@ -54,5 +54,3 @@ fields:
   type: tag_list
   default: []
   label: Keywords
-pages:
-- src/content/posts/building-a-serverless-photo-upload-website-with-react-aws.md
