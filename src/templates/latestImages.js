@@ -58,6 +58,7 @@ export default LatestImages
 export const query = graphql`
   query ImagesQuery($limit: Int!, $skip: Int!) {
     images: allFile(
+      sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
       limit: $limit
       skip: $skip
       filter: {

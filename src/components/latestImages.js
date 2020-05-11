@@ -8,6 +8,7 @@ const LatestImages = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
+        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         limit: 5
         filter: {
           sourceInstanceName: { eq: "latestimages" }
