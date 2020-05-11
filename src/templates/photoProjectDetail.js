@@ -1,10 +1,19 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./projectDetail.scss"
 
 const Post = ({ data: { project }, errors }) => {
+  const options = {
+    showThumbnails: false,
+    captionFontWeight: "300",
+    autoplaySpeed: 0,
+    showDownloadButton: false,
+    enablePanzoom: false,
+  }
+
   return (
     <Layout>
       <SEO
@@ -24,10 +33,14 @@ const Post = ({ data: { project }, errors }) => {
           </h3>
           <hr />
         </section>
-        <section
-          className="photoProjectDetail__content"
-          dangerouslySetInnerHTML={{ __html: project.html }}
-        />
+        <SimpleReactLightbox>
+          <SRLWrapper options={options}>
+            <section
+              className="photoProjectDetail__content"
+              dangerouslySetInnerHTML={{ __html: project.html }}
+            />
+          </SRLWrapper>
+        </SimpleReactLightbox>
       </div>
     </Layout>
   )

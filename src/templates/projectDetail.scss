@@ -59,6 +59,19 @@
 
 }
 
+.md__image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+    margin-bottom: 0;
+}
+
+.md__figcaption {
+    font-style: italic;
+}
+
+
 .photoProjectDetail__main {
     text-align: center;
     padding:1rem;
@@ -76,6 +89,7 @@
     img {
         margin:0;
         background-color: rgba(0,0,0,0.1);
+        cursor: pointer;
     }
 
     .md__figure {
@@ -90,6 +104,7 @@
         width:100%;
         height:100%;
         object-fit: cover;
+        margin-bottom: 0;
     }
 
     .image-grid {

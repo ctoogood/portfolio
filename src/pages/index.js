@@ -10,7 +10,9 @@ import "./pages.scss"
 const IndexPage = props => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "waves-crashing-burra.jpg" }) {
+      placeholderImage: file(
+        relativePath: { eq: "dore-holm-large-waves.jpg" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
