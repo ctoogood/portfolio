@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import "../components/components.scss"
+import SEO from "../components/seo"
 import LatestImage from "../components/latestImage"
 import Layout from "../components/layout"
 
