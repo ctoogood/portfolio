@@ -67,9 +67,7 @@ const WebDevelopment = props => {
               </p>
               <p>
                 All of my web development skills have been self-taught using
-                online-based resources. I very much enjoy learning new skills
-                and challenging myself to solve problems through the available
-                technologies.
+                online-based resources.
               </p>
               <p>
                 Please check out this selection of projects I've designed and

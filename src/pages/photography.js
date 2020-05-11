@@ -63,9 +63,7 @@ const Photography = props => {
               <p>
                 I've been a keen photographer since childhood and completed a
                 BA(hons) Photojournalism in 2012 from Swansea Met University. I
-                was a keen traveller whilst at university, spending a lot of
-                time in Eastern Europe creating photography projects for my
-                studies.
+                was a keen traveller whilst at university.
               </p>
               <p>
                 After completing my degree I spent some time working as a
