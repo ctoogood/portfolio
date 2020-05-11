@@ -25,6 +25,7 @@ const LatestImages = props => {
 
   return (
     <Layout>
+      <SEO title="Latest Images" />
       <section className="latestImages__main">
         <h1>LATEST IMAGES</h1>
         <SimpleReactLightbox>
