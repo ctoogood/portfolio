@@ -9,11 +9,11 @@ const Photography = props => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
-        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
         filter: {
           sourceInstanceName: { eq: "photography" }
           extension: { eq: "md" }
         }
+        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
       ) {
         edges {
           node {
