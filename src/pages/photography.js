@@ -13,7 +13,7 @@ const Photography = props => {
           sourceInstanceName: { eq: "photography" }
           extension: { eq: "md" }
         }
-        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
+        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
       ) {
         edges {
           node {
