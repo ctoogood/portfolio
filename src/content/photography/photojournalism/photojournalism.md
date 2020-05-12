@@ -7,6 +7,7 @@ keywords:
 - Photojournalism
 - Reportage
 order: 6
+date: 2020-05-07T19:49:46Z
 
 ---
 ```grid|2
