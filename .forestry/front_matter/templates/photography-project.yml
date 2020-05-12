@@ -18,13 +18,13 @@ fields:
 - type: list
   name: keywords
   label: keywords
-- name: order
-  type: number
+- name: date
+  type: datetime
+  label: date
   description: ''
-  default: 0
-  required: true
   config:
-    min: 
-    max: 
-    step: 
-  label: order
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
