@@ -17,11 +17,19 @@ const LatestImages = props => {
   const nextPage = "/latest-images/" + (currentPage + 1).toString()
 
   const options = {
-    showThumbnails: false,
-    captionFontWeight: "300",
-    autoplaySpeed: 0,
-    showDownloadButton: false,
-    enablePanzoom: false,
+    settings: {
+      autoplaySpeed: 0,
+      enablePanzoom: false,
+    },
+    buttons: {
+      showDownloadButton: false,
+    },
+    thumbnails: {
+      showThumbnails: false,
+    },
+    captions: {
+      captionFontWeight: "300",
+    },
   }
 
   return (
