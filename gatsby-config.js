@@ -3,7 +3,7 @@ module.exports = {
     title: `Calum Toogood`,
     description: `Web Developer & Photographer Based in Shetland`,
     siteUrl: `https://www.calumtoogood.com`,
-    image: `https://res.cloudinary.com/dhat0b0ey/image/upload/v1590519231/portfolio/home.png`,
+    image: `https://res.cloudinary.com/dhat0b0ey/image/upload/v1590519791/portfolio/home.png`,
     keywords: [
       `Web Developer`,
       `Website`,
