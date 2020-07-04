@@ -2,7 +2,7 @@
 title: A Pinch Of Salt
 category: Web Project
 slug: pinchofsalt
-featuredImage: "./pinchofsalt_home.png"
+featuredImage: https://res.cloudinary.com/dhat0b0ey/image/upload/v1593868577/portfolio/latestimages/pinchofsalt_home_ir0st4.png
 description: Recipe search engine built using the MERN stack(MongoDB, Express, React
   & Node
 keywords:
