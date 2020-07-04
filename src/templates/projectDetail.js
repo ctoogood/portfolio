@@ -17,7 +17,7 @@ const ProjectDetail = ({ data: { project }, errors }) => {
         title={project.frontmatter.title}
         description={project.frontmatter.description}
         keywords={project.frontmatter.keywords}
-        image={project.frontmatter.featuredImage}
+        image={project.frontmatter.featured_image}
       />
       <div className="projectDetail__main">
         <nav className="page__section">
