@@ -2,7 +2,7 @@
 title: Wild Northern Isles
 category: Web Project
 slug: wildnorthernisles
-featuredImage: "./wni_home.png"
+featuredImage: https://res.cloudinary.com/dhat0b0ey/image/upload/v1593868523/portfolio/latestimages/wni_home_yfqzim.png
 description: Inspiration for outdoor activities and adventures in Shetland
 keywords:
 - Gatsby
