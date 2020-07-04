@@ -30,4 +30,5 @@ fields:
   name: github
   label: github
 pages:
+- src/content/webdev/unbrak-outdoor-copy.md
 - src/content/webdev/unbrak-outdoor.md
