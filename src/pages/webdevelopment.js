@@ -7,29 +7,17 @@ import Project from "../components/project"
 const WebDevelopment = props => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
-        filter: {
-          sourceInstanceName: { eq: "webdev" }
-          extension: { eq: "md" }
-        }
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "Web Project" } } }
       ) {
         edges {
           node {
             id
-            childMarkdownRemark {
-              frontmatter {
-                title
-                description
-                slug
-                featuredImage {
-                  childImageSharp {
-                    fluid(maxWidth: 600) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
+            frontmatter {
+              title
+              description
+              slug
+              featured_image
             }
           }
         }
@@ -78,7 +66,7 @@ const WebDevelopment = props => {
           </section>
         </section>
         <section className="page__projects">
-          {data.allFile.edges.map(project => (
+          {data.allMarkdownRemark.edges.map(project => (
             <Project project={project} key={project.node.id} />
           ))}
         </section>

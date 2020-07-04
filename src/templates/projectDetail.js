@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import "./projectDetail.scss"
 
 const ProjectDetail = ({ data: { project }, errors }) => {
-  const image = project.frontmatter.featuredImage.childImageSharp.fluid
+  const image = project.frontmatter.featured_image
 
   return (
     <Layout>
@@ -17,7 +17,7 @@ const ProjectDetail = ({ data: { project }, errors }) => {
         title={project.frontmatter.title}
         description={project.frontmatter.description}
         keywords={project.frontmatter.keywords}
-        image={project.frontmatter.featuredImage.publicURL}
+        image={project.frontmatter.featuredImage}
       />
       <div className="projectDetail__main">
         <nav className="page__section">
@@ -26,7 +26,11 @@ const ProjectDetail = ({ data: { project }, errors }) => {
         <section className="projectDetail__header">
           <section className="projectDetail__fixed">
             <Overdrive id="featured-image">
-              <Img fluid={image} className="projectDetail__image" />
+              <img
+                src={image}
+                alt="Home Page"
+                className="projectDetail__image"
+              />
             </Overdrive>
             <h2 className="projectDetail__metadata">
               {project.frontmatter.category}
@@ -79,14 +83,7 @@ export const query = graphql`
         keywords
         url
         github
-        featuredImage {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        featured_image
       }
     }
   }

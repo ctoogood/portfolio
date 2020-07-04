@@ -2,7 +2,7 @@
 title: Rosy Rose Herbalist
 category: Web Project
 slug: rosyroseherbalist
-featuredImage: "./rosyroseherbalist_home.png"
+featured_image: https://res.cloudinary.com/dhat0b0ey/image/upload/v1593868546/portfolio/latestimages/rosyroseherbalist_home_zseivo.png
 description: Ecommerce website & CMS for a small herbalist business
 keywords:
 - Gatsby
