@@ -2,7 +2,7 @@
 title: Photojournalit
 category: Web Project
 slug: photojournalit
-featuredImage: "./photojournalit__home.png"
+featuredImage: https://res.cloudinary.com/dhat0b0ey/image/upload/v1593868600/portfolio/latestimages/photojournalit__home_sqvax5.png
 description: A photo upload and storage website built using React JS & AWS Amplify
 keywords:
 - AWS
