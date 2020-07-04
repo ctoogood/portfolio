@@ -5,18 +5,16 @@ slug: unbrakoutdoor
 featuredImage: "./Annotation 2020-07-04 135515.png"
 description: Ecommerce website built using Gatsby JS & Shopify
 keywords:
+- Shopify
 - Gatsby
 - GatsbyJS
 - React
 - JavaScript
 - Ecommerce
-- Snipcart
 - Context API
-- CMS
-- Small Business Website
 date: 2020-07-04
 url: https://dazzling-albattani-b46c1b.netlify.app/
-github: 'https://github.com/ctoogood/unbrak'
+github: https://github.com/ctoogood/unbrak
 
 ---
 # Unbrak Outdoor
