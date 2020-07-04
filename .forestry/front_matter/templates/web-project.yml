@@ -12,8 +12,8 @@ fields:
   name: slug
   label: slug
 - type: file
-  name: featuredImage
-  label: featuredImage
+  name: featured_image
+  label: featured_image
 - type: text
   name: description
   label: description
