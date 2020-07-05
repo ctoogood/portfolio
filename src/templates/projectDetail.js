@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import Overdrive from "react-overdrive"
 import Github from "../images/githubgrey.svg"
 import LinkIcon from "../images/link.svg"
@@ -25,13 +24,19 @@ const ProjectDetail = ({ data: { project }, errors }) => {
         </nav>
         <section className="projectDetail__header">
           <section className="projectDetail__fixed">
-            <Overdrive id="featured-image">
-              <img
-                src={image}
-                alt="Home Page"
-                className="projectDetail__image"
-              />
-            </Overdrive>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.frontmatter.url}
+            >
+              <Overdrive id="featured-image">
+                <img
+                  src={image}
+                  alt="Home Page"
+                  className="projectDetail__image"
+                />
+              </Overdrive>
+            </a>
             <h2 className="projectDetail__metadata">
               {project.frontmatter.category}
             </h2>
