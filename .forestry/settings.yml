@@ -33,7 +33,7 @@ sections:
   templates:
   - latest-images
 upload_dir: ''
-public_path: https://res.cloudinary.com/dhat0b0ey/image/upload/portfolio
+public_path: https://res.cloudinary.com/dhat0b0ey/image/upload
 front_matter_path: https://res.cloudinary.com/dhat0b0ey/image/upload/v1588167873/portfolio/latestimages
 use_front_matter_path: false
 file_template: 'portfolio/latestimages/:filename:'
