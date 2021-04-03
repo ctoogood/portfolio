@@ -1,12 +1,13 @@
 import React from "react"
-import Twitter from "../images/twitter.svg"
 import Github from "../images/github.svg"
 import "./components.scss"
 
 const Footer = () => {
   return (
     <div className="footer__main">
-      <p>calumtoogood@protonmail.com</p>
+      <a href="mailto:calumtoogood@protonmail.com">
+        <p>calumtoogood@protonmail.com</p>
+      </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -17,13 +18,6 @@ const Footer = () => {
           src={Github}
           alt="github"
         />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.twitter.com/calumtoogood"
-      >
-        <img style={{ width: "20px" }} src={Twitter} alt="twitter" />
       </a>
       <p>© {new Date().getFullYear()}</p>
     </div>

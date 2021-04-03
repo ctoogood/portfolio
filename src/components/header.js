@@ -42,9 +42,9 @@ const Header = props => {
           >
             Latest Images
           </Link>
-          <Link to="/blog" className="menu__listItem" onClick={toggleMenu}>
+          {/* <Link to="/blog" className="menu__listItem" onClick={toggleMenu}>
             Blog
-          </Link>
+          </Link> */}
         </ul>
         <Footer />
       </section>
