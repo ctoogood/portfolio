@@ -2,7 +2,7 @@
 title: Unbrak Outdoor
 category: Web Project
 slug: unbrakoutdoor
-featured_image: https://res.cloudinary.com/dhat0b0ey/image/upload/v1593868487/portfolio/latestimages/macbook-clipart-laptop-screen-237154-822306_z5bk7k.png
+featured_image: https://res.cloudinary.com/dhat0b0ey/image/upload/v1619638718/portfolio/latestimages/macbook-clipart-laptop-screen-237154-822306_pxtmqp.png
 description: Ecommerce website built using Gatsby JS & Shopify
 keywords:
 - Shopify
